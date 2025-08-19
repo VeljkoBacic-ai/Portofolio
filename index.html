@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veljko Baćić - Web Developer | VelByte</title>
+    <meta name="description" content="Veljko Baćić - Profesionalni web developer. Specijalizovan za moderne web tehnologije i kreiranje naprednih web aplikacija.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loading-content">
+            <div class="code-loader">
+                <span class="loading-tag">&lt;<span class="tag-name">Loading</span><span class="loading-dots-inline">...</span>&gt;</span>
+                <div class="loading-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <img src="image1_large.jpg" alt="VelByte Logo" class="logo-img">
+                <span class="logo-text">VelByte</span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <div class="menu-header">
+                    <div class="menu-title">
+                        <span class="code-comment">// Navigation Menu</span>
+                        <div class="menu-logo">
+                            <span class="bracket">&lt;</span>
+                            <span class="logo-code">VelByte</span>
+                            <span class="bracket">/&gt;</span>
+                        </div>
+                    </div>
+                </div>
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">
+                        <span class="link-text">Početna</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">
+                        <span class="link-text">O meni</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">
+                        <span class="link-text">Usluge</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">
+                        <span class="link-text">Moji radovi</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">
+                        <span class="link-text">Tehnologije</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">
+                        <span class="link-text">Kontakt</span>
+                    </a>
+                </li>
+                <div class="menu-footer">
+                    <div class="menu-status">
+                        <span class="status-dot"></span>
+                        <span class="status-text">Ready to code</span>
+                    </div>
+                    <div class="menu-version">v2.0.25</div>
+                </div>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Floating Code Elements -->
+    <div class="floating-elements">
+        <div class="float-element" data-code="{ }"></div>
+        <div class="float-element" data-code="< >"></div>
+        <div class="float-element" data-code="[ ]"></div>
+        <div class="float-element" data-code="( )"></div>
+        <div class="float-element" data-code="/**/"></div>
+        <div class="float-element" data-code="=>"></div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="matrix-rain"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="code-block">
+                    <span class="code-comment">// Welcome to my digital space</span>
+                </div>
+                <h1 class="hero-title">
+                    <br>
+                    <span class="typing-text delay-1">const developer = &#123;</span>
+                    <br>
+                    <span class="typing-text delay-2">&nbsp;&nbsp;name: "Veljko Baćić",</span>
+                    <br>
+                    <span class="typing-text delay-3">&nbsp;&nbsp;role: "Web Developer",</span>
+                    <br>
+                    <span class="typing-text delay-4">&nbsp;&nbsp;company: "VelByte"</span>
+                    <br>
+                    <span class="typing-text delay-5">&#125;;</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Kreiram moderne, responzivne i performantne web aplikacije 
+                    koristeći najnovije tehnologije i najbolje prakse u industriji.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">
+                        <i class="fas fa-briefcase"></i>
+                        Pogledaj radove
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i>
+                        Kontakt
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="code-editor">
+                    <div class="editor-header">
+                        <div class="editor-tabs">
+                            <div class="tab active">
+                                <span class="tab-icon">⚛️</span>
+                                <span class="tab-name">App.jsx</span>
+                                <span class="tab-close">×</span>
+                            </div>
+                            <div class="tab">
+                                <span class="tab-icon">🎨</span>
+                                <span class="tab-name">styles.css</span>
+                                <span class="tab-close">×</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="editor-body">
+                        <div class="line-numbers">
+                            <span>1</span>
+                            <span>2</span>
+                            <span>3</span>
+                            <span>4</span>
+                            <span>5</span>
+                            <span>6</span>
+                            <span>7</span>
+                            <span>8</span>
+                        </div>
+                        <div class="code-content">
+                            <div class="code-line">
+                                <span class="keyword">import</span> <span class="string">React</span> <span class="keyword">from</span> <span class="string">'react'</span>;
+                            </div>
+                            <div class="code-line">
+                                <span class="keyword">import</span> <span class="string">'./App.css'</span>;
+                            </div>
+                            <div class="code-line">&nbsp;</div>
+                            <div class="code-line">
+                                <span class="keyword">function</span> <span class="function">App</span>() {
+                            </div>
+                            <div class="code-line">
+                                &nbsp;&nbsp;<span class="keyword">return</span> (
+                            </div>
+                            <div class="code-line">
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;div</span> <span class="attr">className</span>=<span class="string">"VelByte.rs"</span><span class="tag">&gt;</span>
+                            </div>
+                            <div class="code-line">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// Amazing projects here ✨</span>
+                            </div>
+                            <div class="code-line">
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;/div&gt;</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="editor-footer">
+                        <div class="status-bar">
+                            <span class="status-item">⚡ Live</span>
+                            <span class="status-item">🚀 Ready</span>
+                            <span class="status-item">Ln 6, Col 24</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;about&gt;</span>
+                <h2 class="section-title">O meni</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-terminal">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span class="terminal-button red"></span>
+                            <span class="terminal-button yellow"></span>
+                            <span class="terminal-button green"></span>
+                        </div>
+                        <div class="terminal-title">veljko@velbyte:~$</div>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-line">
+                            <span class="terminal-prompt">veljko@velbyte:~$</span>
+                            <span class="typing-text terminal-command">cat about_me.txt</span>
+                        </div>
+                        <div class="terminal-output">
+                            <div class="output-line typing-text delay-1">
+                                <span class="output-title">Pozdrav! Ja sam Veljko,</span>
+                            </div>
+                            <div class="output-line typing-text delay-2">
+                                Strastveni web developer sa preko 2 godine iskustva u kreiranju
+                            </div>
+                            <div class="output-line typing-text delay-3">
+                                modernih, responzivnih i performantnih web aplikacija.
+                            </div>
+                            <div class="output-line typing-text delay-4">
+                                Specijalizovan sam za frontend development, ali radim i na backend projektima.
+                            </div>
+                            <div class="output-line typing-text delay-5">
+                                &nbsp;
+                            </div>
+                            <div class="output-line typing-text delay-6">
+                                Moja strast prema programiranju počela je u srednjoj školi, a tokom godina
+                            </div>
+                            <div class="output-line typing-text delay-7">
+                                sam usavršio svoje veštine kroz rad na različitim projektima - od jednostavnih
+                            </div>
+                            <div class="output-line typing-text delay-8">
+                                web stranica do kompleksnih aplikacija sa naprednim funkcionalnostima.
+                            </div>
+                            <div class="output-line typing-text delay-9">
+                                &nbsp;
+                            </div>
+                            <div class="output-line typing-text delay-10">
+                                Volim da se držim najnovijih trendova u industriji i konstantno učim nove
+                            </div>
+                            <div class="output-line typing-text delay-11">
+                                tehnologije kako bih svojim klijentima pružio najbolja rešenja.
+                            </div>
+                        </div>
+                        <div class="terminal-cursor">_</div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="20">0</span>
+                        <span class="stat-label">Završenih projekata</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="2">0</span>
+                        <span class="stat-label">Godine iskustva</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="100">0</span>
+                        <span class="stat-label">% Zadovoljnih klijenata</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;services&gt;</span>
+                <h2 class="section-title">Usluge</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16,18 22,12 16,6"></polyline>
+                            <polyline points="8,6 2,12 8,18"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Web Development</h3>
+                    <p class="service-description">
+                        Kreiranje responzivnih web aplikacija koristeći moderne tehnologije 
+                        poput React-a, Vue.js i Node.js.
+                    </p>
+                    <ul class="service-features">
+                        <li>Responzivni dizajn</li>
+                        <li>SEO optimizacija</li>
+                        <li>Brze performanse</li>
+                        <li>Cross-browser kompatibilnost</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">UI/UX Design</h3>
+                    <p class="service-description">
+                        Dizajniranje intuitivnih korisničkih interfejsa sa fokusom na 
+                        korisničko iskustvo i moderne design trendove.
+                    </p>
+                    <ul class="service-features">
+                        <li>Wireframing & Prototyping</li>
+                        <li>User Research</li>
+                        <li>Interactive Design</li>
+                        <li>Design System</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1 1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Konsultacije</h3>
+                    <p class="service-description">
+                        Tehnološke konsultacije i pregled postojećih projekata sa 
+                        preporukama za poboljšanje performansi i korisničkog iskustva.
+                    </p>
+                    <ul class="service-features">
+                        <li>Code Review</li>
+                        <li>Performance Audit</li>
+                        <li>Technology Stack Consulting</li>
+                        <li>Best Practices Implementation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;skills&gt;</span>
+                <h2 class="section-title">Tehnološke veštine</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-content">
+                <div class="skills-categories">
+                    <button class="skill-category active" data-category="frontend">
+                        <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16,18 22,12 16,6"></polyline>
+                            <polyline points="8,6 2,12 8,18"></polyline>
+                        </svg>
+                        <span>Frontend</span>
+                    </button>
+                    <button class="skill-category" data-category="backend">
+                        <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                        <span>Backend</span>
+                    </button>
+                    <button class="skill-category" data-category="tools">
+                        <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                        </svg>
+                        <span>Alati</span>
+                    </button>
+                </div>
+                <div class="skills-container">
+                    <div class="skills-grid frontend active">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
+                            </div>
+                            <span class="skill-name">React</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue.js" />
+                            </div>
+                            <span class="skill-name">Vue.js</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+                            </div>
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" />
+                            </div>
+                            <span class="skill-name">TypeScript</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
+                            </div>
+                            <span class="skill-name">CSS3</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
+                            </div>
+                            <span class="skill-name">HTML5</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="95"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-grid backend">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" />
+                            </div>
+                            <span class="skill-name">Node.js</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+                            </div>
+                            <span class="skill-name">Python</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" />
+                            </div>
+                            <span class="skill-name">PostgreSQL</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" />
+                            </div>
+                            <span class="skill-name">MongoDB</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-grid tools">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
+                            </div>
+                            <span class="skill-name">Git</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" />
+                            </div>
+                            <span class="skill-name">VS Code</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" />
+                            </div>
+                            <span class="skill-name">Figma</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" alt="AWS" />
+                            </div>
+                            <span class="skill-name">AWS</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="70"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;portfolio&gt;</span>
+                <h2 class="section-title">Moji radovi</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="websajt">VelByte Website-ovi</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="websajt">
+                    <div class="portfolio-image">
+                        <div class="placeholder-img">
+                            <div class="restaurant-mockup">
+                                <div class="resto-header">
+                                    <div class="resto-logo">PREKO PUTA</div>
+                                    <div class="resto-nav">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="resto-hero">
+                                    <div class="resto-title">Fast Food</div>
+                                    <div class="resto-subtitle">Restaurant</div>
+                                </div>
+                                <div class="resto-menu">
+                                    <div class="menu-item"></div>
+                                    <div class="menu-item"></div>
+                                    <div class="menu-item"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Preko Puta - Fast Food</h3>
+                            <p>Moderni responsive websajt za fast food restoran!</p>
+                            <div class="portfolio-tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">Bootstrap</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <div class="portfolio-links">
+                                <a href="https://veljkobacic-ai.github.io/MyProjects/" class="portfolio-link" target="_blank" title="Otvori websajt">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15,3 21,3 21,9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                                <a href="#" class="portfolio-link" title="GitHub (uskoro)">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="websajt">
+                    <div class="portfolio-image">
+                        <div class="placeholder-img">
+                            <div class="auto-mockup">
+                                <div class="auto-header">
+                                    <div class="auto-logo">
+                                        <img src="projects/auto-mirko/MirkoLogo.png" alt="Auto Mirko" style="width: 30px; height: 30px; border-radius: 50%;">
+                                        AUTO MIRKO
+                                    </div>
+                                    <div class="auto-nav">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="auto-hero">
+                                    <div class="auto-title">AUTO PLAC</div>
+                                    <div class="auto-subtitle">Prokuplje</div>
+                                </div>
+                                <div class="auto-cars">
+                                    <div class="car-item"></div>
+                                    <div class="car-item"></div>
+                                    <div class="car-item"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Auto Plac Mirko</h3>
+                            <p>Profesionalna trgovina polovnim vozilima u Prokuplju sa katalogom, vulkanizerskim uslugama i dijagnostikom</p>
+                            <div class="portfolio-tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Firebase</span>
+                            </div>
+                            <div class="portfolio-links">
+                                <a href="https://veljkobacic-ai.github.io/Mirko/" class="portfolio-link" target="_blank" title="Otvori websajt">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15,3 21,3 21,9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                                <a href="#" class="portfolio-link" title="GitHub (uskoro)">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="websajt">
+                    <div class="portfolio-image">
+                        <div class="placeholder-img">
+                            <div class="barbershop-mockup">
+                                <div class="barber-header">
+                                    <div class="barber-logo">VELJA</div>
+                                    <div class="barber-subtitle">Premium Berbernica</div>
+                                </div>
+                                <div class="barber-hero">
+                                    <div class="barber-title">Gde se tradicija</div>
+                                    <div class="barber-subtitle">susreće sa luksuzom</div>
+                                </div>
+                                <div class="barber-services">
+                                    <div class="service-item">✂️</div>
+                                    <div class="service-item">🪒</div>
+                                    <div class="service-item">💈</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Velja Premium Berbernica</h3>
+                            <p>Luksuzni sajt za premium berberski salon sa modernim dizajnom i galerijom radova</p>
+                            <div class="portfolio-tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Responsive</span>
+                            </div>
+                            <div class="portfolio-links">
+                                <a href="https://veljkobacic-ai.github.io/barber/" class="portfolio-link" target="_blank" title="Otvori websajt">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15,3 21,3 21,9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                                <a href="#" class="portfolio-link" title="GitHub (uskoro)">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;contact&gt;</span>
+                <h2 class="section-title">Kontakt</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-header">
+                            <h3>Zapocnimo saradnju!</h3>
+                            <p>Imate ideju za projekat? Kontaktirajte me i pretvorimo je u realnost.</p>
+                        </div>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="contact-text">
+                                    <span class="contact-label">Email</span>
+                                    <span class="contact-value">velbyters@gmail.com</span>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                        <path d="m22 6-10 7L2 6"></path>
+                                    </svg>
+                                </div>
+                                <div class="contact-text">
+                                    <span class="contact-label">Instagram</span>
+                                    <a href="https://instagram.com/velbyte.rs" target="_blank" class="contact-value">@velbyte.rs</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <div class="contact-text">
+                                    <span class="contact-label">Lokacija</span>
+                                    <span class="contact-value">Srbija</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://instagram.com/velbyte.rs" target="_blank" class="social-link">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="m16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form class="form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Ime *</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                            <div class="input-focus"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email *</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                            <div class="input-focus"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Tema</label>
+                            <input type="text" id="subject" name="subject" class="form-input">
+                            <div class="input-focus"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Poruka *</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="6" required></textarea>
+                            <div class="input-focus"></div>
+                        </div>
+                        <button type="submit" class="form-submit">
+                            <span class="submit-text">Pošalji poruku</span>
+                            <svg class="submit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22,2 15,22 11,13 2,9 22,2"></polygon>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-logo">
+                        <img src="image1_large.jpg" alt="VelByte Logo" class="footer-logo-img">
+                        <span class="footer-logo-text">VelByte</span>
+                    </div>
+                    <p class="footer-description">
+                        Kreiranje modernih web rešenja koja transformišu ideje u digitalne realnosti.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://instagram.com/velbyte.rs" target="_blank" class="footer-social-link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="m16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer-social-link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer-social-link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-title">Navigacija</h4>
+                        <ul class="footer-list">
+                            <li><a href="#home" class="footer-link">Početna</a></li>
+                            <li><a href="#about" class="footer-link">O meni</a></li>
+                            <li><a href="#services" class="footer-link">Usluge</a></li>
+                            <li><a href="#portfolio" class="footer-link">Portfolio</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Usluge</h4>
+                        <ul class="footer-list">
+                            <li><a href="#" class="footer-link">Web Development</a></li>
+                            <li><a href="#" class="footer-link">UI/UX Design</a></li>
+                            <li><a href="#" class="footer-link">Konsultacije</a></li>
+                            <li><a href="#" class="footer-link">Održavanje</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Kontakt</h4>
+                        <ul class="footer-list">
+                            <li><span class="footer-link">velbyters@gmail.com</span></li>
+                            <li><a href="https://instagram.com/velbyte.rs" target="_blank" class="footer-link">@velbyte.rs</a></li>
+                            <li><span class="footer-link">Srbija</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2025 VelByte. Sva prava zadržana.</p>
+                </div>
+                <div class="footer-code">
+                    <span class="code-text">console.log('Thanks for visiting!');</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        // Initialize EmailJS with your credentials
+        emailjs.init("EzoDWmMG6XJ-YpvJu");
+        window.emailjsConfigured = true;
+    </script>
+</body>
+</html>
